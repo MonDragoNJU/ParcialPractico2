@@ -1,0 +1,11 @@
+.weird {
+    width: auto;
+}
+
+.column {
+    background-color: rgb(242, 242, 242);
+}
+
+.table td {
+    padding: 10px; 
+}

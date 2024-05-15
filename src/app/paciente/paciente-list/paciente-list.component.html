@@ -1,0 +1,27 @@
+<div class="row">
+
+  <div class="col">
+      <table class="table weird">
+          <thead>
+              <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col" >Edad</th>
+              </tr>
+          </thead>
+      
+  
+        <tr *ngFor="let paciente of pacientes">
+          <td style="font-weight: bold"  class="column">
+            {{paciente.nombre}}
+          </td>
+          <td  class="content column">
+            {{paciente.edad}}
+          </td>
+      </tr>
+
+      <p>Numero Menores: {{minors}}</p>
+
+    </table>
+
+  </div>
+</div>
