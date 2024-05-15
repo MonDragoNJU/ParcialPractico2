@@ -1,3 +1,7 @@
+<div *ngIf="selected">
+  <app-paciente-detail [pacienteDetail]="selectedPaciente"></app-paciente-detail>
+ </div>
+
 <div class="row">
 
   <div class="col">
@@ -11,10 +15,10 @@
       
   
         <tr *ngFor="let paciente of pacientes">
-          <td style="font-weight: bold"  class="column">
+          <td style="font-weight: bold"  class="column" (click)="onSelected(paciente)">
             {{paciente.nombre}}
           </td>
-          <td  class="content column">
+          <td  class="content column" (click)="onSelected(paciente)">
             {{paciente.edad}}
           </td>
       </tr>
